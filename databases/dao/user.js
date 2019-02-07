@@ -55,7 +55,7 @@ class User {
                     let dataPg = await pgMaster.users.findByPk(userId, { raw: true });
                     if (dataPg) {
                         output = dataPg;
-                        let addRedis = await client.set('user:' + userId, JSON.stringify(data), 'EX', 300);
+                        let addRedis = await client.set('user:' + userId, JSON.stringify(output), 'EX', 300);
                     }
                 } else {
                     //console.log('data from pg')

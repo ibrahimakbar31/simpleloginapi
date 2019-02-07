@@ -4,7 +4,7 @@ const { check, validationResult } = require('express-validator/check');
 const dao = require('../../databases/dao/index');
 const errorOutput = require('../../helpers/error');
 const validator = require('validator')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const { tokenLogin } = require('../../helpers/token')
 
 router.post('/',
