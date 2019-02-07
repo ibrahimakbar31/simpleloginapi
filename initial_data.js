@@ -1,6 +1,6 @@
 const Promise = require('promise')
 const pgMaster = require('./databases/models/pg_master/index');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 function main() {
     return new Promise(async function (resolve, reject) {
