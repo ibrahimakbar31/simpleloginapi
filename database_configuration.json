@@ -1,0 +1,29 @@
+{
+  "development": {
+    "pg_master": {
+      "database": "simpleloginapi",
+      "host": "127.0.0.1",
+      "username": "postgres",
+      "password": "postgres",
+      "dialect": "postgres"
+    },
+    "redis_master": {
+      "host": "127.0.0.1",
+      "port": "6379"
+    }
+  },
+  "production": {
+    "pg_master": {
+      "database": "mbcsufci",
+      "host": "stampy.db.elephantsql.com",
+      "username": "mbcsufci",
+      "password": "GWa7Z3dKwz6_LA_JOrCIgmTDbjCJR0rc",
+      "dialect": "postgres"
+    },
+    "redis_master": {
+      "host": "redis-11813.c15.us-east-1-2.ec2.cloud.redislabs.com",
+      "port": "11813",
+      "password": "xmVVokIRVV3K3dGxEiJhPwR6rluifVmR"
+    }
+  }
+}
